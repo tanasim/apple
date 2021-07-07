@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .service{
+	height: 150px;
+	background: #C8513C;
+}
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.subtitulo {
+    text-align: center;
+    font-weight: 700;
+    color: #9f8ad0;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.gallery {
+    background: #f2f2f2;
+}
+
+.contenedor-galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-galeria {
+    object-fit: cover;
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgb(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.img-galeria:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.imagen-light{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+
+.show{
+    transform: translate(0);
+}
+
+.agregar-imagen {
+    object-fit: cover;
+    width: 60%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
+}
+
+.showImage{
+    transform: scale(1);
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+    color:#fff;
+    font-size: 25px;
+}
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"
+    />
+    <link rel="stylesheet" href="vendor/font-Awesome/css/all.min.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!--     <link rel="stylesheet" href="CSS/indes.css"> -->
+  </head>
+  <body>
+    <section class="header header-top-area">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container">
+            <a class="navbar-brand logo" href="#">
+              <img src="img/logo-2.svg" alt="" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="service.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </section>
+
+
+
+
+
+    <section class="gallery" id="portafolio">
+      <div class="service d-flex justify-content-center align-items-center">
+        <h1>Gallery</h1>
+    </div>
+        <div class="contenedor">
+          <div class="contenedor-galeria">
+            <img src="https://images.pexels.com/photos/1183021/pexels-photo-1183021.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="img-galeria">
+            <img src="https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" class="img-galeria">
+            <img src="https://images.pexels.com/photos/2832061/pexels-photo-2832061.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="img-galeria">
+            <img src="https://images.pexels.com/photos/2356059/pexels-photo-2356059.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="img-galeria">
+            <img src="https://images.pexels.com/photos/4275885/pexels-photo-4275885.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="img-galeria">
+            <img src="https://images.pexels.com/photos/1424246/pexels-photo-1424246.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="img-galeria">
+            <img src="https://images.pexels.com/photos/1428787/pexels-photo-1428787.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="img-galeria">
+            <img src="https://images.pexels.com/photos/2693529/pexels-photo-2693529.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="img-galeria">
+            <img src="https://images.pexels.com/photos/3022417/pexels-photo-3022417.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="img-galeria">
+          </div>
+        </div>
+      </section>
+      
+      <section class="imagen-light">
+        <i class="fas fa-times close"></i>
+        <img src="./img/img-3.jpg" alt="" class="agregar-imagen">
+      </section>
+      
+
+ 
+    <div class="footer-area footer-bg section-padding">
+      <div class="footer-top-area">
+        <div class="container">
+          <div class="row">
+            <!-- START SINGLE WIDGET -->
+            <div class="col-md-4 col-sm-6">
+              <div class="footer-widget">
+                <h4 class="footer-logo">
+                  about <span>Apple Leaf Private Limited</span>
+                </h4>
+                <p>
+                  This document is only for the in-house management of the
+                  company. It contains the final and present business strategies
+                  and organisational structure of this company. It should be a
+                  non-disclosure document and must be secured by the executive
+                  team of Apple Leaf .
+                </p>
+                <div class="footer-social">
+                  <ul>
+                    <li>
+                      <a href=""><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fab fa-skype"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- END SINGLE WIDGET -->
+
+            <!-- START SINGLE WIDGET -->
+            <div class="col-md-4 col-sm-6">
+              <div class="footer-widget">
+                <h4 class="footer-widget-title">Quick links</h4>
+                <div class="footer-menu">
+                  <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">service</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- END SINGLE WIDGET -->
+            <!-- START SINGLE WIDGET -->
+            <div class="col-md-4 col-sm-6">
+              <div class="footer-widget">
+                <h4 class="footer-logo">Contact Info</h4>
+                <div class="footer-contact">
+                  <!-- START SINGLE CONTACT INFO -->
+                  <div class="single-contact-info">
+                    <span> <i class="fal fa-map-marker"></i></span>
+
+                    <h6>address</h6>
+                    <p>Los Angeles, California</p>
+                  </div>
+                  <!-- START SINGLE CONTACT INFO -->
+                  <!-- END SINGLE CONTACT INFO -->
+                  <div class="single-contact-info">
+                    <span><i class="fal fa-phone"></i></span>
+                    <h6>phone</h6>
+                    <p>+1266-3333-77</p>
+                  </div>
+                  <!-- END SINGLE CONTACT INFO -->
+                  <!-- START SINGLE CONTACT INFO -->
+                  <div class="single-contact-info">
+                    <span><i class="fal fa-envelope"></i></span>
+                    <h6>Email</h6>
+                    <p>info@your-mail.com</p>
+                  </div>
+                  <!-- END SINGLE CONTACT INFO -->
+                  <div class="single-contact-info">
+                    <span> <i class="fal fa-globe"></i></span>
+                    <h6>website</h6>
+                    <p>www.sitename.com</p>
+                  </div>
+                  <!-- END SINGLE CONTACT INFO -->
+                </div>
+              </div>
+            </div>
+            <!-- END SINGLE WIDGET -->
+          </div>
+          <!-- END ROW -->
+        </div>
+        <!-- END CONTAINER -->
+      </div>
+      <!-- END FOOTER TOP -->
+    </div>
+    <footer class="footer-bottom-area footer-bottom-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="footer-text text-center">
+              <p class="text-muted">
+                <span>Apple Leaf Private Limited</span> ©2021 - All Right
+                Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js" async defer></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js" async defer></script>
+    <!-- <script src="vendor/bootstrap/js/bootstrap.bundle.js" async defer></script> -->
+    <script src="vendor/font-Awesome/js/all.min.js" async defer></script>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script>
+  const imagenes = document.querySelectorAll('.img-galeria');
+const imagenesLight = document.querySelector('.agregar-imagen');
+const contenedorLight = document.querySelector('.imagen-light');
+
+imagenes.forEach(imagen =>{
+    imagen.addEventListener('click', ()=>{
+        aparecerImagen(imagen.getAttribute('src'))
+    
+    })
+})
+
+contenedorLight.addEventListener('click', (e) =>{
+    if(e.target !== imagenesLight){
+        contenedorLight.classList.remove('show');
+        imagenesLight.classList.remove('showImage'); 
+    }
+})
+
+const aparecerImagen = (imagen) =>{
+    imagenesLight.src = imagen;
+    contenedorLight.classList.add('show');
+    imagenesLight.classList.add('showImage');
+}
+    </script>
+
+  </body>
+</html>
