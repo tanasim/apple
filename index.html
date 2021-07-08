@@ -3,25 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
+    <title>HOME</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"
-    />
+    <link rel="stylesheet" href="vendor/OwlCarousel/css/theme.min.css"/>
+    <link rel="stylesheet" href="vendor/OwlCarousel/css/carousel.min.css"/>
     <link rel="stylesheet" href="vendor/font-Awesome/css/all.min.css" />
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--     <link rel="stylesheet" href="CSS/indes.css"> -->
   </head>
   <body>
-    <section class="header header-top-area">
-      <nav class="navbar navbar-expand-lg navbar-light">
+    <section class="header header-top-area fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light " >
         <div class="container">
           <a class="navbar-brand logo" href="#">
             <img src="img/logo-2.svg" alt="" />
@@ -86,6 +81,8 @@
                 Paint/Print Advertising, Influencer Promotion, Commercial Fair,
                 Visiting Card, Brochure, Leaflet, Receipt Forms.
               </p>
+              <a class="slide-btn smoth-scroll" href="service.html">learn more</a>
+              <a class="slide-btn smoth-scroll" href="contact.html">get in touch</a>
             </div>
           </div>
           <div class="carousel-item slid-1" data-bs-interval="2000">
@@ -100,6 +97,8 @@
                 Tourism Events, AGuest Speaker Event, Seminar or Half Day Event,
                 Webinars, Awards and Competitions, VIP Dinner Events.
               </p>
+              <a class="slide-btn smoth-scroll" href="service.html">learn more</a>
+              <a class="slide-btn smoth-scroll" href="contact.html">get in touch</a>
             </div>
           </div>
           <div class="carousel-item slid-3">
@@ -115,6 +114,8 @@
                 Promotions, YouTube Based Publication, Podcast, OTT Platform
                 App, International Certificate Course Academics (ABRSM, TRINITY)
               </p>
+              <a class="slide-btn smoth-scroll" href="service.html">learn more</a>
+              <a class="slide-btn smoth-scroll" href="contact.html">get in touch</a>
             </div>
           </div>
         </div>
@@ -138,7 +139,7 @@
         </button>
       </div>
     </section>
-    <section class="about area">
+    <section class="about area" data-aos="fade-up">
       <div class="container">
         <div class="section-title text-center">
           <h2>About us</h2>
@@ -168,27 +169,14 @@
                 there are few employees who are obtaining their revenue on a
                 contractual basis.
               </p>
-              <a href="" class="read-more">Read more</a>
+              <a href="about.html" class="read-more">Read more</a>
             </div>
-            <!--  <h3>welcome to Apple Leaf Private Limited</h3>
-               <p>This document is only for the in-house management of the company. It contains the final
-                and present business strategies and organisational structure of this company. It should be a
-                non-disclosure document and must be secured by the executive team of Apple Leaf Private
-                Limited. Apple Leaf would be a multinational company and we are working on it. It serves
-                advertising, marketing, event management and as vision, it will be a Film Distributor Company
-                (OTT Platform) in future. We have started our journey from this June of 2021. Currently, the
-                company is concentrating on construction & expanding its business day by day.</p>
-               <p>Apple Leaf Private Limited constructing its business with three LOB (Lines of business).
-                Those three LOBs are controlled by the owner of Apple Leaf Private Limited and all properties
-                possessed by him. About the employment, every employee is not salaried and there are few
-                employees who are obtaining their revenue on a contractual basis.
-                </p> 
-               <button class="btn btn-primary">read more</button>-->
+            
           </div>
           <div class="col-md-6">
             <div class="image">
               <img
-                src="http://www.wordpressboss.com/tf/getx-demo/getx/assets/images/about.png"
+                src="img/about.png"
                 alt=""
               />
             </div>
@@ -196,7 +184,7 @@
         </div>
       </div>
     </section>
-    <section class="service area bg">
+    <section class="service area bg" data-aos="fade-up">
       <div class="container">
         <div class="section-title text-center">
           <h2>What we do?</h2>
@@ -212,7 +200,7 @@
                   Digital Advertising, Digital Marketing, Website Solution,
                   TVC(TV-Commercials), RDC (Radio Commercials) Hoarding...
                 </p>
-                <a href="" class="read-more">Read more</a>
+                <a href="service.html" class="read-more">Read more</a>
               </div>
             </div>
             <div class="col-md-4 col-sm-6">
@@ -223,7 +211,7 @@
                   Public Concerts, Corporate Concerts, Conferences, Stadium
                   Events, Organizational Events, Festival Events...
                 </p>
-                <a href="" class="read-more">Read more</a>
+                <a href="service.html" class="read-more">Read more</a>
               </div>
             </div>
             <div class="col-md-4 col-sm-6">
@@ -234,14 +222,14 @@
                   Feature Films, Art Films, Web Series, Short Films, 3D/2D/4K
                   Animated Films, Music Videos, Choreography Videos....
                 </p>
-                <a href="" class="read-more">Read more</a>
+                <a href="service.html" class="read-more">Read more</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="team" class="team-area section-padding">
+    <section id="team" class="team-area section-padding" data-aos="fade-up">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
@@ -257,7 +245,7 @@
             <div class="owl-item">
               <div class="single-team wow fadeInUp">
                 <img
-                  src="http://www.wordpressboss.com/tf/getx-demo/getx/assets/images/team/team2.jpg"
+                  src="img/team2.jpg"
                   alt=""
                 />
                 <h4>tanvir rahman</h4>
@@ -283,7 +271,7 @@
             <div class="owl-item">
               <div class="single-team wow fadeInUp">
                 <img
-                  src="http://www.wordpressboss.com/tf/getx-demo/getx/assets/images/team/team3.jpg"
+                  src="img/team3.jpg"
                   alt=""
                 />
                 <h4>jannat toyonte</h4>
@@ -309,7 +297,7 @@
             <div class="owl-item">
               <div class="single-team wow fadeInUp">
                 <img
-                  src="http://www.wordpressboss.com/tf/getx-demo/getx/assets/images/team/team4.jpg"
+                  src="img/team4.jpg"
                   alt=""
                 />
                 <h4>john doe</h4>
@@ -335,7 +323,7 @@
             <div class="owl-item">
               <div class="single-team wow fadeInUp">
                 <img
-                  src="http://www.wordpressboss.com/tf/getx-demo/getx/assets/images/team/team2.jpg"
+                  src="img/team2.jpg"
                   alt=""
                 />
                 <h4>nidhi rahman</h4>
@@ -361,7 +349,7 @@
             <div class="owl-item">
               <div class="single-team wow fadeInUp">
                 <img
-                  src="http://www.wordpressboss.com/tf/getx-demo/getx/assets/images/team/team1.jpg"
+                  src="img/team1.jpg"
                   alt=""
                 />
                 <h4>tanvir rahman</h4>
@@ -387,7 +375,7 @@
             <div class="owl-item">
               <div class="single-team wow fadeInUp">
                 <img
-                  src="http://www.wordpressboss.com/tf/getx-demo/getx/assets/images/team/team2.jpg"
+                  src="img/team2.jpg"
                   alt=""
                 />
                 <h4>tanvir rahman</h4>
@@ -438,7 +426,7 @@
       </div>
     </section>
 
-    <section id="portfolio" class="work section-padding bg">
+    <section id="portfolio" class="work section-padding bg" data-aos="fade-up">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
@@ -449,18 +437,18 @@
         </div>
         <div class="row">
           <div class="filters col-md-12">
-            <ul id="filters">
-              <li class="active" data-filter="*">All</li>
-              <li data-filter=".advertising">Advertising</li>
-              <li data-filter=".events">Events</li>
-              <li data-filter=".films">Films & Entertainment</li>
+            <ul>
+              <li class="active filter" data-filter="all">All</li>
+              <li class="filter" data-filter="advertising">Advertising</li>
+              <li class="filter" data-filter="events">Events</li>
+              <li class="filter" data-filter="films">Films & Entertainment</li>
             </ul>
           </div>
         </div>
         <div class="work-inner">
-          <div class="row work-posts grid">
+          <div class="row work-posts grid projects">
             <!-- START SINGLE WORK DESIGN AREA -->
-            <div class="col-md-4 col-sm-6 web photography">
+            <div class="col-md-4 col-sm-6 web project" data-filter="events">
               <div class="item wow fadeInUp">
                 <a href="#" class="work-popup">
                   <figure class="effect-apollo">
@@ -477,7 +465,7 @@
             </div>
             <!-- END SINGLE WORK DESIGN AREA -->
             <!-- START SINGLE WORK DESIGN AREA -->
-            <div class="col-md-4 col-sm-6 graphic photography">
+            <div class="col-md-4 col-sm-6 graphic project" data-filter="advertising">
               <div class="item wow fadeInUp">
                 <a href="assets/images/work/2.jpg" class="work-popup">
                   <figure class="effect-apollo">
@@ -494,7 +482,7 @@
             </div>
             <!-- END SINGLE WORK DESIGN AREA -->
             <!-- START SINGLE WORK DESIGN AREA -->
-            <div class="col-md-4 col-sm-6 web">
+            <div class="col-md-4 col-sm-6 project" data-filter="films">
               <div class="item wow fadeInUp">
                 <a href="#" class="work-popup">
                   <figure class="effect-apollo">
@@ -511,7 +499,7 @@
             </div>
             <!-- END SINGLE WORK DESIGN AREA -->
             <!-- START SINGLE WORK DESIGN AREA -->
-            <div class="col-md-4 col-sm-6 typography">
+            <div class="col-md-4 col-sm-6 project" data-filter="advertising">
               <div class="item wow fadeInUp">
                 <a href="#" class="work-popup">
                   <figure class="effect-apollo">
@@ -528,7 +516,7 @@
             </div>
             <!-- END SINGLE WORK DESIGN AREA -->
             <!-- START SINGLE WORK DESIGN AREA -->
-            <div class="col-md-4 col-sm-6 typography web">
+            <div class="col-md-4 col-sm-6 project" data-filter="films">
               <div class="item wow fadeInUp">
                 <a href="assets/images/work/4.jpg" class="work-popup">
                   <figure class="effect-apollo">
@@ -545,7 +533,7 @@
             </div>
             <!-- END SINGLE WORK DESIGN AREA -->
             <!-- START SINGLE WORK DESIGN AREA -->
-            <div class="col-md-4 col-sm-6 graphic photography">
+            <div class="col-md-4 col-sm-6 project" data-filter="advertising">
               <div class="item wow fadeInUp">
                 <a href="assets/images/work/5.jpg" class="work-popup">
                   <figure class="effect-apollo">
@@ -562,7 +550,7 @@
             </div>
             <!-- END SINGLE WORK DESIGN AREA -->
             <!-- START SINGLE WORK DESIGN AREA -->
-            <div class="col-md-4 col-sm-6 web typography">
+            <div class="col-md-4 col-sm-6 project" data-filter="events">
               <div class="item wow fadeInUp">
                 <a href="#" class="work-popup">
                   <figure class="effect-apollo">
@@ -579,7 +567,7 @@
             </div>
             <!-- END SINGLE WORK DESIGN AREA -->
             <!-- START SINGLE WORK DESIGN AREA -->
-            <div class="col-md-4 col-sm-6 photography">
+            <div class="col-md-4 col-sm-6 project" data-filter="films">
               <div class="item wow fadeInUp">
                 <a href="#" class="work-popup">
                   <figure class="effect-apollo">
@@ -596,7 +584,7 @@
             </div>
             <!-- END SINGLE WORK DESIGN AREA -->
             <!-- START SINGLE WORK DESIGN AREA -->
-            <div class="col-md-4 col-sm-6 graphic">
+            <div class="col-md-4 col-sm-6 project" data-filter="advertising">
               <div class="item wow fadeInUp">
                 <a href="#" class="work-popup">
                   <figure class="effect-apollo">
@@ -616,7 +604,7 @@
         </div>
       </div>
     </section>
-    <section class="whychose area ">
+    <section class="whychose area " data-aos="fade-up">
       <div class="container">
         <div class="section-title text-center">
           <h2>why choose us</h2>
@@ -625,7 +613,7 @@
           <div class="col-md-6">
             <div class="why-chosse-image">
               <img
-                src="http://www.wordpressboss.com/tf/getx-demo/getx/assets/images/why-choose-us.jpg"
+                src="img/why-choose-us.jpg"
                 alt=""
               />
             </div>
@@ -761,7 +749,7 @@
         </div>
       </div>
     </section>
-    <section id="testimonial" class="testimonial-area section-padding bg">
+    <section id="testimonial" class="testimonial-area section-padding bg" data-aos="fade-up">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
@@ -782,7 +770,7 @@
               <div class="single-testimonial text-center">
                 <div class="d-flex justify-content-center">
                   <img
-                    src="http://www.wordpressboss.com/tf/getx-demo/getx/assets/images/testimonial/3.jpg"
+                    src="img/t3.jpg"
                     class="img-circle"
                     alt=""
                   />
@@ -808,7 +796,7 @@
               <div class="single-testimonial text-center">
                 <div class="d-flex justify-content-center">
                   <img
-                    src="http://www.wordpressboss.com/tf/getx-demo/getx/assets/images/testimonial/1.jpg"
+                    src="img/t1.jpg"
                     class="img-circle"
                     alt=""
                   />
@@ -836,7 +824,7 @@
               <div class="single-testimonial text-center">
                 <div class="d-flex justify-content-center">
                   <img
-                    src="http://www.wordpressboss.com/tf/getx-demo/getx/assets/images/testimonial/2.jpg"
+                    src="img/t2.jpg"
                     class="img-circle"
                     alt=""
                   />
@@ -859,33 +847,7 @@
                 </div>
               </div>
             </div>
-            <div class="owl-item">
-              <div class="single-testimonial text-center">
-                <div class="d-flex justify-content-center">
-                  <img
-                    src="http://www.wordpressboss.com/tf/getx-demo/getx/assets/images/testimonial/2.jpg"
-                    class="img-circle"
-                    alt=""
-                  />
-                </div>
 
-                <h6 class="text-muted">john doe</h6>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s.
-                </p>
-                <h5>CEO of apple</h5>
-                <div class="rating">
-                  <ul>
-                    <li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star"></i></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
 
             <div class="owl-controls clickable">
               <div class="owl-pagination">
@@ -898,7 +860,7 @@
         </div>
       </div>
     </section>
-    <div class="footer-area footer-bg section-padding">
+    <div class="footer-area footer-bg section-padding" data-aos="fade-up">
       <div class="footer-top-area">
         <div class="container">
           <div class="row">
@@ -1009,13 +971,32 @@
         </div>
       </div>
     </footer>
-
+    <div class="scroll-to-up">
+      <div class="scrollup" id="goTop">
+          <i class="fa fa-angle-up "></i>
+      </div>
+  </div>
     <script src="js/main.js" async defer></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js" async defer></script>
     <!-- <script src="vendor/bootstrap/js/bootstrap.bundle.js" async defer></script> -->
     <script src="vendor/font-Awesome/js/all.min.js" async defer></script>
-    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/OwlCarousel/js/owl.carousel.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init(
+        {
+          offset: 300, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+        }
+      );
+    </script>
     <script>
       $(document).ready(function () {
         $(".owl-carousel-c").owlCarousel({
@@ -1037,7 +1018,7 @@
           itemsDesktop: [1199, 3],
           itemsDesktopSmall: [980, 2],
           itemsMobile: [600, 1],
-          navigation: true,
+          navigation: false,
           navigationText: ["", ""],
           pagination: true,
           autoPlay: true,

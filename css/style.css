@@ -37,11 +37,13 @@ h4 {
 }
 .header {
 		background: #fff;
-		position: relative;
+	}
+	.is-sticky{
+		box-shadow: 0 3px 4.7px 0.3px rgba(0, 0, 0, 0.24);
 	}
 .carousel{
 
-	background-color: linear-gradient(rgba(210, 71, 90, 0.5), rgba(210, 71, 90, 0.5)),
+	margin-top: 70px;
 
 }
 .carousel-control-next, .carousel-control-prev {
@@ -59,15 +61,15 @@ h4 {
 	margin-bottom: 20px;
 }
 .slid-1{
-	background:url(https://nestro-demo.netlify.app/assets/img/bg/slide-1.jpg);
+	background:url(../img/slide-1.jpg);
 	background-size: cover;
 }
 .slid-2{
-	background: url(https://nestro-demo.netlify.app/assets/img/bg/slide-2.jpg);
+	background: url(../img/slide-2.jpg);
 	background-size: cover;
 }
 .slid-3{
-	background:url(https://nestro-demo.netlify.app/assets/img/bg/slide-3.jpg);
+	background:url(../img/slide-3.jpg);
 	background-size: cover;
 }
 .overlay {
@@ -832,4 +834,73 @@ figure.effect-apollo:hover .social-icons {
 	}
 	.leave{
 		margin-bottom: 20px;
+	}
+	.hide { /* You can play with the seconds to change the "animation" */
+		animation: hide .5s ease 0s 1 normal forwards;
+		transform-origin: center;
+	  }
+	  .show { /* You can play with the seconds to change the "animation" */
+		  animation: show .5s ease 0s 1 normal forwards;    
+		  transform-origin: center;
+	  }
+	  
+	  @keyframes hide {
+		0%{
+		  transform: scale(1);        
+		}
+		100% {
+		  transform: scale(0);        
+		  width: 0;
+		  height: 0;
+		  margin: 0;
+		}
+	  }
+	  @keyframes show {
+		0%{
+		  transform: scale(0);     
+		  width: 0;
+		  height: 0;
+		  margin: 0;   
+		}
+		100% {
+		  transform: scale(1);    
+		}
+	  }
+	  /*  // Needed for filters */
+	  a.slide-btn {
+		display: inline-block;
+		color: #fff;
+		padding: 10px 20px;
+		text-transform: uppercase;
+		background: #C8513C;
+		margin-top: 20px;
+		width: 160px;
+		border-radius: 30px;
+		margin-left: 5px;
+		margin-right: 5px;
+		font-size: 14px;
+	}
+	.pagesection{
+		height: 150px;
+		background: #C8513C;
+		margin-top: 70px;
+	}
+	  .scrollup {
+		height: 40px;
+		width: 40px;
+		font-size: 30px;
+		color: #fff;
+		text-align: center;
+		background-color: #C8513C;
+		position: fixed;
+		bottom: 30px;
+		right: 30px;
+		line-height: 35px;
+		cursor: pointer;
+		display: none;
+		box-shadow: 0px 1px 4.7px 0.3px rgba(0, 0, 0, 0.24);
+		z-index: 2;
+	}
+	.scrollshow{
+display: block;
 	}

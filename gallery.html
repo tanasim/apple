@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
+    <title>GALLERY</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
@@ -103,21 +103,12 @@ body {
     font-size: 25px;
 }
     </style>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"
-    />
     <link rel="stylesheet" href="vendor/font-Awesome/css/all.min.css" />
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <!--     <link rel="stylesheet" href="CSS/indes.css"> -->
   </head>
   <body>
-    <section class="header header-top-area">
+    <section class="header header-top-area fixed-top">
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container">
             <a class="navbar-brand logo" href="#">
@@ -156,13 +147,8 @@ body {
           </div>
         </nav>
       </section>
-
-
-
-
-
     <section class="gallery" id="portafolio">
-      <div class="service d-flex justify-content-center align-items-center">
+      <div class="pagesection d-flex justify-content-center align-items-center">
         <h1>Gallery</h1>
     </div>
         <div class="contenedor">
@@ -298,13 +284,15 @@ body {
         </div>
       </div>
     </footer>
-
-    <script src="js/main.js" async defer></script>
+    <div class="scroll-to-up">
+      <div class="scrollup" id="goTop">
+          <i class="fa fa-angle-up "></i>
+      </div>
+  </div>
+  <script src="js/main.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js" async defer></script>
-    <!-- <script src="vendor/bootstrap/js/bootstrap.bundle.js" async defer></script> -->
     <script src="vendor/font-Awesome/js/all.min.js" async defer></script>
-    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
     <script>
   const imagenes = document.querySelectorAll('.img-galeria');
 const imagenesLight = document.querySelector('.agregar-imagen');
